@@ -24,9 +24,10 @@
     border-width: .1rem;
 }
 
-#output{
-    width: calc(100% - (1000px / 10 + 3rem)); 
+#output_large{
+    width: calc(100% - (500px  + 1 rem));
     margin: auto;
+    /* width: 500px; */
     display: flex;
     flex-wrap: wrap;
 }

@@ -1,4 +1,4 @@
-const container = document.getElementById('output');
+const container = document.getElementById('output_large');
 let playButton = document.getElementById('button');
 let selectedElement = document.getElementById('select_difficult');
 
