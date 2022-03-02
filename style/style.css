@@ -6,7 +6,7 @@
 .flex{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -17,16 +17,24 @@
 }
 
 .box{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: solid black;
     background-color: aqua;
     border-width: .1rem;
 }
 
 #output{
-    width: calc(100% - ((1000px - 1rem )/ 1.1)); /*FIXME:FATTO AD OCCHIO*/ 
+    width: calc(100% - (1000px / 10 + 3rem)); 
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+#select_difficult{
+    width: 150px;
+}
+
+#button{
+    width: 80px;
 }
