@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav_bar{
+    height: 120px;
+    background-color: blue;
+    margin: auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    background-color: aqua;
+    border-width: .1rem;
+}
+
+#output{
+    width: calc(100% - ((1000px - 1rem )/ 1.1)); /*FIXME:FATTO AD OCCHIO*/ 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
