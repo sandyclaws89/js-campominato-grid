@@ -1,29 +1,31 @@
-const container = document.getElementById('output_large');
+const container = document.getElementById('output');
 let playButton = document.getElementById('button');
 let selectedElement = document.getElementById('select_difficult');
 
 playButton.addEventListener('click', play);
 
-// for (i=1; i<=100; i++) {
-//     container.innerHTML += `<div class=box>${i}</div>`
-// }
+
 function play(){
     let selectDifficult = selectedElement.value;
     if (selectDifficult == "easy"){
-        for (i=1; i<=49; i++) {
-           container.innerHTML += `<div class=box>${i}</div>`
+    container.innerHTML = '';        
+    for (i=1; i<=49; i++) {
+            container.style.width ='420px';
+           
+            container.innerHTML += `<div class= "box flex"> ${i}</div>`
         }
-        console.log("ciao");
     } else if(selectDifficult == "medium"){
+        container.innerHTML ='';
         for (i=1; i<=81; i++) {
-            container.innerHTML += `<div class=box>${i}</div>`
+            container.style.width ='540px';
+            container.innerHTML += `<div class= "box flex">${i}</div>`
         }
-        console.log("rete");
     }
     else if (selectDifficult == "hard"){
+        container.innerHTML ='';
         for (i=1; i<=100; i++) {
-            container.innerHTML += `<div class=box>${i}</div>`
+            container.style.width ='600px';
+            container.innerHTML += `<div class= "box flex">${i}</div>`
         }
-        console.log("cane");
     }
 }
